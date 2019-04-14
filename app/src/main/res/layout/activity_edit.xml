@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".Edit_data"
+    android:background="#D8D0B7">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_main_nama"
+        android:layout_width="120dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="bottom"
+        android:text="Nama Sekolah"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_main_alamat"
+        android:layout_width="120dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/tv_main_nama"
+        android:layout_marginBottom="4dp"
+        android:gravity="bottom"
+        android:text="Alamat Sekolah"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_siswa"
+        android:layout_width="120dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/tv_main_alamat"
+        android:layout_marginBottom="4dp"
+        android:gravity="bottom"
+        android:text="Jumlah Siswa"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_guru"
+        android:layout_width="120dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/tv_siswa"
+        android:layout_marginBottom="4dp"
+        android:gravity="bottom"
+        android:text="Jumlah Guru"
+        android:textSize="20sp" />
+
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_main_nama"
+        android:textSize="21sp"
+        android:hint=" Masukkan Nama Sekolah"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_main_nama"
+        android:layout_toRightOf="@id/tv_main_alamat"
+        android:textSize="21sp"
+        android:hint=" Masukkan Alamat Sekolah"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_siswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_main_alamat"
+        android:layout_toRightOf="@id/tv_siswa"
+        android:textSize="21sp"
+        android:hint=" Masukkan Jumlah Siswa"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_guru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_siswa"
+        android:layout_toRightOf="@id/tv_guru"
+        android:textSize="21sp"
+        android:hint=" Masukkan Jumlah Guru"/>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="75dp"
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C1A12E"
+        android:layout_below="@id/et_guru"
+        android:text="Save" />
+
+
+
+</RelativeLayout>
